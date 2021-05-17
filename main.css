@@ -1,0 +1,310 @@
+@font-face
+{
+	font-family: Montserrat; src: url("Montserrat-Medium.ttf");
+}
+*, *::before, *::after
+{
+    margin: 0;
+    padding: 0;
+}
+img
+{
+    max-width: 100%;
+}
+.kezdolaphatter
+{
+    background-image: url("hatter.jpg");
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+    background-position: right top;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.alhatter
+{
+    background-image: url("elmosotthatter.jpg");
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+    background-position: right top;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.hatter-keret
+{
+  position: absolute;
+  background-color: rgba(255,255,255,0.4);
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: ;
+  margin-bottom:;
+  height: 100vh;
+}
+.nev
+{
+	margin-top: 12%;
+	margin-left: 15%;
+  margin-bottom: 0px;
+	font-size: 70px;
+	font-family: Montserrat;
+	color: black;
+}
+.portf
+{
+	margin-top: 0.1%;
+	margin-left: 35%;
+	font-size: 35px;
+	font-family: Montserrat;
+	color: black;
+}
+.cim
+{
+    margin-top: 5%;
+    margin-left: 3%;
+    margin-bottom: 0;
+    font-size: 40px;
+    font-family: Montserrat;
+    color: black;
+}	
+.szoveg
+{
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: black;
+    max-width: 80%;
+    text-align: justify;
+}
+.szoveg2
+{
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: black;
+    max-width: 80%;
+    text-align: justify;
+}
+
+/*---navigációs-sáv---*/
+nav
+{
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: Montserrat;
+    word-spacing: 100px;
+}
+
+hr
+{
+    border: 2px solid black;
+}
+
+.aktiv
+{
+    color: rgba(0,0,0);
+    display: inline-block;
+    padding-right: 3%;
+    padding-left: 3%;
+    margin-top: 10px;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.oldal
+{
+    color: rgba(0,0,0,.6);
+    display: inline-block;
+    padding-right: 3%;
+    padding-left: 3%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+a.oldal:hover 
+{
+    color:black;
+}
+
+.fejlec-nav
+{
+    list-style: none; 
+}
+li
+{
+    display: inline;
+}
+/*---navigációs-sáv vége---*/
+
+/*---diavetítés---*/
+ol, li
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ol
+{
+    margin-left: 10%;
+}
+.diavetites
+{
+  position: relative;
+  padding-top: 40%;
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
+}
+.diavetites_nezegeto
+{
+    position: absolute;
+    top: 2%;
+    right: 0px;
+    left: 10%;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    padding-bottom: 10%;
+    scroll-behavior: smooth;
+    border-bottom: none;
+    overflow: hidden;
+}
+.dia
+{
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  background-color: #f99;
+}
+.dia:nth-child(even)
+{
+  background-color: #99f;
+}
+.dia:before
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-40%,70px);
+  font-size: 2em;
+}
+.diavetites_navigacio
+{
+  position: absolute;
+  right: 0;
+  top:80%;
+  left: -12%;
+  text-align: center;
+  padding-bottom: none;
+}
+
+.diavetites_lista,
+.diavetites_elem
+{
+  display: inline-block;
+}
+
+.diavetites_gomb
+{
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: white;
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
+}
+.diavetites::before,
+.diavetites::after
+{
+  content: '';
+  z-index: 1;
+  background-color: #333;
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: center;
+}
+/*---diavetítes vége---*/
+
+/*---galéria-rács---*/
+
+.kep_kartya
+{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.grid
+{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.grid::after 
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 500px)
+{
+  .kep_kartya
+  {
+    width: 100%;
+  }
+}
+*
+{
+  box-sizing: border-box;
+}
+/*---galéria-rács---*/
+
+/*---dokumentáció-rács---*/
+.terv_doksi
+{
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+.grid_doksi
+{
+  padding-top:2%;
+  margin-left: 20%;
+  margin-right: 10%;
+}
+.grid_doksi::after 
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 500px)
+{
+  .terv_doksi
+  {
+    width: 100%;
+  }
+}
+*
+{
+  box-sizing: border-box;
+}
+/*---dokumentáció-rács vége---*/
